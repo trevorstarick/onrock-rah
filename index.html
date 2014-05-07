@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 <head>
   <meta charset="utf-8">
@@ -52,8 +53,8 @@
         </div>
       </div>
       <div class="form-group">
-        <div class="col-xs-12">
-          <select class="form-control" id="vRiderShirtSize">
+        <div class="col-xs-10">
+          <select required class="form-control" id="vRiderShirtSize">
             <option Selected="selected">Select Riders T-Shirt size</option>
             <option>Mens - XXXL</option>
             <option>Mens - XXL</option>
@@ -69,8 +70,9 @@
           </select>
         </div>
       </div>
-      <hr/>
-      <h4><input type="checkbox" id="vPassengerRidingAlong">      Passenger Riding Along</h4>
+      <div class="col-xs-12">
+        <h5>Passenger riding along with you? &nbsp &nbsp <input type="checkbox" id="vPassengerRidingAlong"> &nbsp Yes</h5>
+      </div>
       <div class="form-group">
         <div class="col-xs-6">
           <input type="text" class="form-control" id="vPassengerFirstName" placeholder="Passengers First name">
@@ -80,8 +82,8 @@
         </div>
       </div>
       <div class="form-group">
-        <div class="col-xs-12">
-          <select required class="form-control" id="vPassengerShirtSize">
+        <div class="col-xs-10">
+          <select class="form-control" id="vPassengerShirtSize">
             <option>Mens - XXXL</option>
             <option>Mens - XXL</option>
             <option>Mens - XL</option>
@@ -97,26 +99,6 @@
           </select>
         </div>
       </div>
-      <hr />
-      <h4>Email</h4>
-      <div class="form-group">
-        <div class="col-xs-12">
-          <input type="email" required class="form-control" id="vRiderEmail" placeholder="Email Address">
-        </div>
-      </div>
-      <hr />
-      <h4>Phone Number</h4>
-        <div class="form-group">
-          <div class="col-xs-2">
-            <h6><input type="checkbox" id="vRiderCellPhone"> Cell</h6>
-          </div>
-          <div class="col-xs-10">
-            <h6><input type="checkbox" id="vRiderHomePhone"> Home</h6>
-          </div>
-          <div class="col-xs-6">
-            <input type="tel" required class="form-control" id="vRiderPhoneNumber" placeholder="514-999-1234">
-          </div>        
-        </div>
       <hr />
       <h4>Address</h4>
       <div class="form-group">
@@ -137,20 +119,44 @@
           <input type="text" required class="form-control" id="vRiderPostalCode" placeholder="Postal Code">
         </div>
       </div>
+      <h4>Email</h4>
+      <div class="form-group">
+        <div class="col-xs-12">
+          <input type="email" required class="form-control" id="vRiderEmail" placeholder="Email Address">
+        </div>
+      </div>
+      <h4>Phone Number</h4>
+        <div class="form-group">
+          <div class="col-xs-2">
+            <h6><input type="checkbox" id="vRiderCellPhone"> Cell</h6>
+          </div>
+          <div class="col-xs-2">
+            <h6><input type="checkbox" id="vRiderHomePhone"> Home</h6>
+          </div>
+          <div class="col-xs-6">
+            <input type="tel" required class="form-control" id="vRiderPhoneNumber" placeholder="###-###-####">
+          </div>        
+        </div>
       <hr />
-      <h4>Fundraising Goal</h4>
+      <h4>Fund Raising Goal</h4>
       <div class="form-group">
         <div class="col-xs-12">
-          <input type="text" required class="form-control" id="vRiderFundraisingGoal" placeholder="Fundraising Goal">
+          <input type="text" required class="form-control" id="vRiderFundraisingGoal" placeholder="Your fund raising goal...registration is free if you raise $150 or more">
         </div>
       </div>
-      <hr />     <h4>Motorcycle Type</h4>
+      <h4>Motorcycle Type</h4>
       <div class="form-group">
         <div class="col-xs-12">
-          <input type="text" class="form-control" id="vRiderMotorcycleType" placeholder="Motorcycle Type">
+          <input type="text" class="form-control" id="vRiderMotorcycleType" placeholder="Motorcycle make and model">
         </div>
+        <div class="col-xs-12">
+          <h5>Do you belong to a Motorcycle club/association? &nbsp &nbsp <input type="checkbox" id="vMotorcycleClubMember"> &nbsp Yes</h5>
+        </div>
+        <div class="col-xs-12">
+          <input type="text" class="form-control" id="vMotorcycleClubName" placeholder="If yes, which club/association...">
+        </div>        
       </div>
-      <div class="form-group submit">
+ <div class="form-group submit">
         <div class="col-xs-offset-7 col-xs-5">
           <button type="submit" id="submit" value="true" class="btn btn-default col-xs-12">Register</button>
         </div>
@@ -169,7 +175,10 @@
             <h5>Thank you for Registering.</h5>
             <p>
             You will receive a confirmation email shortly from RAH@onrock.org
-            with your registration ID and additional details.
+            that will contain your registration ID and additional details.
+            </p>
+            <p>
+            Make sure to download and complete the <a href="http://onrock.org/RAH2014_pledge_web.pdf"> Sponsor Information </a> form.
             </p>
           </div>
           <div class="modal-footer">
