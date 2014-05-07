@@ -195,8 +195,8 @@
     var values = {};
     $.each($('#form')[0], function(i,f) {
       if(f.id === 'submit') {
-        if(!values['vPassengerRidingAlong']) {
-          values['vPassengerShirtSize'] = '';
+        if(!values.vPassengerRidingAlong) {
+          values.vPassengerShirtSize = '';
         }
         $.ajax({
           type: "POST", 
