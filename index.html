@@ -44,61 +44,55 @@
     <form class="form form-horizontal" id="form" role="form">
       <h4>Riders Information</h4>
       <div class="form-group">
-        <div class="col-sm-6">
-          <input type="text" required class="form-control" id="vRiderFirstName" placeholder="Riders First name">
+        <div class="col-xs-6">
+          <input type="text" required class="form-control" id="vRiderFirstName" placeholder="First name">
         </div>
-        <div class="col-sm-6">
+        <div class="col-xs-6">
           <input type="text" required class="form-control" id="vRiderLastName" placeholder="Last name">
         </div>
       </div>
       <div class="form-group">
-        <h6>Rider T-Shirt Size</h6>
-        <div class="col-sm-12">
+        <div class="col-xs-12">
           <select class="form-control" id="vRiderShirtSize">
-            <option>Select T-Shirt size</option>
-            <option>Mens - XXXL</option>
-            <option>Mens - XXL</option>
-            <option Selected="selected">Mens - XL</option>
-            <option>Mens - L</option>
-            <option>Mens - M</option>
-            <option>Mens - S</option>
-            <option disabled><hr/></option>
-            <option>Womens - XL</option>
-            <option>Womens - L</option>
-            <option>Womens - M</option>
-            <option>Womens - S</option>
-            <option disabled><hr/></option>
-            <option>Other (you will be contacted for details)</option>
-          </select>
-        </div>
-      </div>
-      <hr/>
-      <h4><input type="checkbox" id="vPassengerRidingAlong">    Passenger Riding Along</h4>
-      <div class="form-group">
-        <div class="col-sm-6">
-          <input type="text" class="form-control" id="vPassengerFirstName" placeholder="Passengers First name">
-        </div>
-        <div class="col-sm-6">
-          <input type="text" class="form-control" id="vPassengerLastName" placeholder="Last name">
-        </div>
-      </div>
-      <div class="form-group">
-        <h6>T-Shirt Size</h6>
-        <div class="col-sm-12">
-          <select class="form-control" id="vPassengerShirtSize">
-            <option>Select T-Shirt size</option>
+            <option Selected="selected">Select Riders T-Shirt size</option>
             <option>Mens - XXXL</option>
             <option>Mens - XXL</option>
             <option>Mens - XL</option>
             <option>Mens - L</option>
             <option>Mens - M</option>
             <option>Mens - S</option>
-            <option disabled><hr/></option>
             <option>Womens - XL</option>
             <option>Womens - L</option>
-            <option Selected="selected">Womens - M</option>
+            <option>Womens - M</option>
             <option>Womens - S</option>
-            <option disabled><hr/></option>
+            <option>Other (you will be contacted for details)</option>
+          </select>
+        </div>
+      </div>
+      <hr/>
+      <h4><input type="checkbox" id="vPassengerRidingAlong">      Passenger Riding Along</h4>
+      <div class="form-group">
+        <div class="col-xs-6">
+          <input type="text" class="form-control" id="vPassengerFirstName" placeholder="Passengers First name">
+        </div>
+        <div class="col-xs-6">
+          <input type="text" class="form-control" id="vPassengerLastName" placeholder="Last name">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-xs-12">
+          <select required class="form-control" id="vPassengerShirtSize">
+            <option>Mens - XXXL</option>
+            <option>Mens - XXL</option>
+            <option>Mens - XL</option>
+            <option>Mens - L</option>
+            <option>Mens - M</option>
+            <option>Mens - S</option>
+            <option Selected="selected">Select Passengers T-Shirt size</option>
+            <option>Womens - XL</option>
+            <option>Womens - L</option>
+            <option>Womens - M</option>
+            <option>Womens - S</option>
             <option>Other (you will be contacted for details)</option>
           </select>
         </div>
@@ -106,50 +100,58 @@
       <hr />
       <h4>Email</h4>
       <div class="form-group">
-        <div class="col-sm-12">
+        <div class="col-xs-12">
           <input type="email" required class="form-control" id="RiderEmail" placeholder="Email Address">
         </div>
       </div>
+      <hr />
       <h4>Phone Number</h4>
+        <div class="form-group">
+          <div class="col-xs-2">
+            <h6><input type="checkbox" id="vRiderCellPhone"> Cell</h6>
+          </div>
+          <div class="col-xs-10">
+            <h6><input type="checkbox" id="vRiderHomePhone"> Home</h6>
+          </div>
+          <div class="col-xs-6">
+            <input type="tel" required class="form-control" id="RiderPhoneNumber" placeholder="999-999-9999">
+          </div>        
+        </div>
+      <hr />
+      <h4>Address</h4>
       <div class="form-group">
-        <div class="col-sm-12">
-          <input type="checkbox" id="vRiderCellPhone" Cell Phone>
-          <input type="checkbox" id="vRiderHomePhone" Home Phone> 
-          <input type="tel" required class="form-control" id="RiderPhoneNumber" placeholder="Phone Number">
+        <div class="col-xs-12">
+          <input type="text" required class="form-control" id="RiderAddress" placeholder="Address">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-xs-6">
+          <input type="text" required class="form-control" id="RiderCity" placeholder="City">
+        </div>
+        <div class="col-xs-6">
+          <input type="text" required class="form-control" id="RiderProvice" placeholder="Province">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-xs-4">
+          <input type="text" required class="form-control" id="RiderPostalCode" placeholder="Postal Code">
         </div>
       </div>
       <hr />
       <h4>Fundraising Goal</h4>
       <div class="form-group">
-        <div class="col-sm-12">
+        <div class="col-xs-12">
           <input type="text" required class="form-control" id="RiderFundraisingGoal" placeholder="Fundraising Goal">
         </div>
       </div>
-      <hr />
-      <h4>Address</h4>
+      <hr />     <h4>Motorcycle Type</h4>
       <div class="form-group">
-        <div class="col-sm-12">
-          <input type="text" required class="form-control" id="RiderAddress" placeholder="Address">
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="col-sm-8">
-          <input type="text" required class="form-control" id="RiderCity" placeholder="City">
-          <input type="text" required class="form-control" id="RiderProvice" placeholder="Province">
-        </div>
-        <div class="col-sm-4">
-          <input type="text" required class="form-control" id="RiderPostalCode" placeholder="Postal Code">
-        </div>
-      </div>
-      <hr />
-      <h4>Motorcycle Type</h4>
-      <div class="form-group">
-        <div class="col-sm-12">
-          <input type="text" required class="form-control" id="RiderMotorcycleType" placeholder="Motorcycle Type">
+        <div class="col-xs-12">
+          <input type="text" class="form-control" id="RiderMotorcycleType" placeholder="Motorcycle Type">
         </div>
       </div>
       <div class="form-group submit">
-        <div class="col-sm-offset-7 col-sm-5">
+        <div class="col-xs-offset-7 col-xs-5">
           <button type="submit" id="submit" value="true" class="btn btn-default col-xs-12">Register</button>
         </div>
       </div>
@@ -160,15 +162,15 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            <h4 class="modal-title" id="myModalLabel">Riders Against Hunger 2014</h4>
           </div>
           <div class="modal-body">
             
-            Thank you for Registering.
-            
+            <h5>Thank you for Registering.</h5>
+            <p>
             You will receive a confirmation email shortly from RAH@onrock.org
             with your registration ID and additional details.
-
+            </p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -189,7 +191,7 @@
         }
         $.ajax({
           type: "POST", 
-          url: "http://onrock.starick.com:3000", 
+          url: "http://107.170.80.174:3000", 
           data: values
         });
         $('.submit').hide();
