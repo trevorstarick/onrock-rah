@@ -9,7 +9,7 @@ var csv = fs.createWriteStream('log.csv', {
 });
 
 var message = {
-  "subject": "RAH-2014 Sign Up Confirmation",
+  "subject": "On Rock RAH-2014 Registration Confirmation",
   "from_email": "RAH@onrock.org",
   "from_name": "On-Rock RAH",
   "headers": {
@@ -70,7 +70,7 @@ app.post('/', function(req, res) {
   }, function(e) {
     console.log('A mandrill error occurred: ' + e.name + ' - ' + e.message);
   });
-  csv.write('\n' + values.join(",") + '\n');
+  csv.write(values.join("\t") + '\r\n');
   res.send(200);
 });
 
