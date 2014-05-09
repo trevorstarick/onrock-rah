@@ -203,9 +203,6 @@
     var values = {};
     $.each($('#form')[0], function(i,f) {
       if(f.id === 'submit') {
-        if(!values.vPassengerRidingAlong) {
-          values.vPassengerShirtSize = '';
-        }
         $.ajax({
           type: "POST", 
           url: "http://107.170.80.174:3000", 
